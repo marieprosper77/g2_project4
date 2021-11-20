@@ -1,0 +1,12 @@
+
+
+body {
+  background-image: url("https://s3.amazonaws.com/assets.datacamp.com/production/project_558/img/credit_card.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Patrick Hand";
+}
+
+
+
