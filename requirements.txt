@@ -6,7 +6,8 @@ flask
 pandas
 numpy
 matplotlib
-sklearn
+sklearn==0.0
+imblearn==0.0
 warnings
 seaborn
 itertools
