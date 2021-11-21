@@ -1,9 +1,0 @@
-django
-gunicorn
-django-heroku
-numpy
-flask
-pandas
-numpy
-matplotlib
-sklearn
