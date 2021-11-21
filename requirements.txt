@@ -4,10 +4,9 @@ importlib-metadata==4.8.2
 click==8.0.3
 Flask==2.0.2
 greenlet==1.1.2
-itsdangerous==1.1.0
+itsdangerous==2.0.1
 Jinja2==2.11.2
 joblib==1.0.0
-itsdangerous==2.0.1
 numpy==1.19.5
 python-dateutil==2.8.1
 pytz==2020.5
