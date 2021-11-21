@@ -8,12 +8,19 @@ pandas
 numpy
 matplotlib
 sklearn
-scikit-learn
+scikit-learn==0.24.0
 warnings
 seaborn
 itertools
 psycopg2
 sqlalchemy
 joblib
+threadpoolctl
+python-dateutil
+scipy
+six
+MarkupSafe
+joblib
+Jinja2
 
 
