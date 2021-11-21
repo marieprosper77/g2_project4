@@ -7,11 +7,10 @@ pandas
 numpy
 matplotlib
 sklearn==0.0
-imblearn==0.0
 warnings
 seaborn
 itertools
 psycopg2
 sqlalchemy
 joblib
-Flask-SQLAlchemy==2.5.1
+
