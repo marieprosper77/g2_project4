@@ -1,3 +1,4 @@
+click
 django
 gunicorn
 django-heroku
@@ -6,11 +7,13 @@ flask
 pandas
 numpy
 matplotlib
-sklearn==0.0
+sklearn
+scikit-learn
 warnings
 seaborn
 itertools
 psycopg2
 sqlalchemy
 joblib
+
 
