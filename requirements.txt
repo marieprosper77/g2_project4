@@ -1,5 +1,4 @@
 django
-gunicorn
 django-heroku
 matplotlib
 click==7.1.2
