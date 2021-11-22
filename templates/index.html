@@ -5,74 +5,85 @@
 
   <meta charset="UTF-8">
   <title>Credit Card Approval</title>
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
 <body>
- <div class="predict">
-	<h2 style="margin: auto; width: 35%; padding: 1%; border: 2px solid; text-align: center;">Credit Card Acceptance Prediction</h2>
-<br>
-
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-		<fieldset style="float:left;height: 390px;">
-			
-			<!-- Number of Children -->
-			<label for="children"><b>Number of Children:</b></label>
-			<input type="text" name="children" placeholder="for none, type 0" required="required" />
-			
-			<!-- Income -->
-			<p><label for="income"><b>Income (USD):</b></label>
-			<input type="text" name="income" placeholder="no commas (Ex. 50000)" required="required" /></p>
-
-			<!-- Number of Family Members -->
-			<p><label for="family_members"><b>Family Size</b></label>
-				<input type="text" name="income" placeholder="(including yourself)" required="required" /></p>
-
-			<!-------------------------------------------------->
-			<!-- THESE NEXT BINARY PARTS COULD GET COMPLICATED-->
-			<!--the "values" and general setup could be off for these-->
-			<!-------------------------------------------------->
-
-			<!-- Gender (F)-->
-			<p><b>Gender:</b></p>
-			<input type="radio" id="female" name="gender" value="2" required="required" />
-			<label for="female">Female</label>
-			<!-- Gender (M)-->
-			<input type="radio" id="male" name="gender" value="1" required="required" />
-			<label for="male">Male</label>
-			<br>
-
-			<!-- Own Car (N)-->
-			<p><b>Own Car:</b></p>
-			<input type="radio" id="no" name="car" value="2" required="required" />
-			<label for="car">No</label>
-			<!-- Own Car (Y)-->
-			<input type="radio" id="no" name="car" value="1" required="required" />
-			<label for="male">Yes</label>
-			<br>			
-		
-			<!-- Own Car (N)-->
-			<p><b>Own Realty:</b></p>
-			<input type="radio" id="no" name="realty" value="2" required="required" />
-			<label for="no">No</label>
-			<!-- Own Car (Y)-->
-			<input type="radio" id="yes" name="realty" value="1" required="required" />
-			<label for="yes">Yes</label>
-			<br>
-			</fieldset>
-		
-		<br>
-		<div style="text-align:center;">
-			<button type="submit" class="btn btn-primary btn-block btn-large"><b>Predict</b></button>
-		</div>
-    </form>
-	<br>
-	<div class="result" align="center">
-		{% if prediction_text %}
-			<p style="padding: 0.5%"><b>{{ prediction_text }}</b></p>
-		{% endif %}	
+	<div class="predict">
+	   <h2 style="margin: auto; width: 35%; padding: 1%; border: 2px solid; text-align: center;">Credit Card Acceptance Prediction</h2>
+   <br>
+   
+		<!-- Main Input For Receiving Query to our ML -->
+	   <form action="{{ url_for('predict')}}"method="post">
+		   <fieldset style="float:left;height: 390px;">
+			   
+			   <!-- Number of Children -->
+			   <label for="children"><b>Number of Children:</b></label>
+			   <input type="text" name="children" placeholder="for none, type 0" required="required" />
+			   
+			   <!-- Income -->
+			   <p><label for="income"><b>Income (USD):</b></label>
+			   <input type="text" name="income" placeholder="no commas (Ex. 50000)" required="required" /></p>
+   
+			   <!-- Number of Family Members -->
+			   <p><label for="family_members"><b>Family Size</b></label>
+				   <input type="text" name="income" placeholder="(including yourself)" required="required" /></p>
+   
+			   <!-------------------------------------------------->
+			   <!-- THESE NEXT BINARY PARTS COULD GET COMPLICATED-->
+			   <!--the "values" and general setup could be off for these-->
+			   <!-------------------------------------------------->
+   
+			   <!-- Gender (F)-->
+			   <p><b>Gender:</b></p>
+			   <input type="radio" id="female" name="gender" value="2" required="required" />
+			   <label for="female">Female</label>
+			   <!-- Gender (M)-->
+			   <input type="radio" id="male" name="gender" value="1" required="required" />
+			   <label for="male">Male</label>
+			   <br>
+   
+			   <!-- Own Car (N)-->
+			   <p><b>Own Car:</b></p>
+			   <input type="radio" id="no" name="car" value="2" required="required" />
+			   <label for="car">No</label>
+			   <!-- Own Car (Y)-->
+			   <input type="radio" id="no" name="car" value="1" required="required" />
+			   <label for="male">Yes</label>
+			   <br>			
+		   
+			   <!-- Own Car (N)-->
+			   <p><b>Own Realty:</b></p>
+			   <input type="radio" id="no" name="realty" value="2" required="required" />
+			   <label for="no">No</label>
+			   <!-- Own Car (Y)-->
+			   <input type="radio" id="yes" name="realty" value="1" required="required" />
+			   <label for="yes">Yes</label>
+			   <br>
+			   </fieldset>
+		   
+		   <br>
+		   <div style="text-align:center;">
+			   <button type="submit" class="btn btn-primary btn-block btn-large"><b>Predict</b></button>
+		   </div>
+	   </form>
+	   <br>
+	   <div class="result" align="center">
+		   {% if prediction_text %}
+			   <p style="padding: 0.5%"><b>{{ prediction_text }}</b></p>
+		   {% endif %}	
+	   </div>
 	</div>
- </div>
-
-
-</body>
-</html>
+   
+   
+   </body>
+   </html>
