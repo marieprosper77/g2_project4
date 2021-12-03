@@ -16,6 +16,329 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- template CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- custom main style css -->
+    <link href='css/mainstyle.css' rel='stylesheet'>
+  </head>
+
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+ 
+    </header>
+
+    <!-- Project Description -->
+    <section class="content-section bg-light" id="description">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            
+      
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="content-section bg-primary text-secondary" id="datavisualization">
+        <div class="container text-center my-auto">
+          <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Data Visualization Placeholder</h3>
+            <h2 class="mb-5">How the dataset looks like</h2>
+          </div>
+        </div>
+      </section> -->
+
+
+
+
+   
+ 
+
+
+    <!-- Portfolio -->
+    <section class="content-section" id="mlmodels">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Machine Learning</h3>
+          <h2 class="mb-5">Create the prediction model</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#portfolio" data-toggle="modal" data-target="#model_step_1">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Step 1: Regression Models</h1>
+                  <p class="mb-0">we chose four regression models to train the dataset</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a> 
+          </div>
+          <!-- models_step_1 -->
+          <div class="modal fade" id="model_step_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header">
+                          <h2 class="modal-title">Four Regression Models We Chose</h2>
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body">
+                          <div class="list-group">
+                              <a class="list-group-item list-group-item-action active">
+                                Logistic Regression Model</a>
+                              <a class="list-group-item list-group-item-action">Class Tree Model</a>
+                              <a class="list-group-item list-group-item-action">Random Forest Model</a>
+                              <a href="#" class="list-group-item list-group-item-action">Naive Bayes Model</a>    
+                          </div>
+                      </div>    
+                  </div>
+                  <!--/.Content-->
+              </div>
+          </div>
+          <!-- end of model_step_1-->
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#portfolio" data-toggle="modal" data-target="#model_step_2">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Step 2: Confusion Matrixes</h1>
+                  <p class="mb-0">List out two confusion matrixes and evaluate the accuracy</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <!-- models_step_2s -->
+          <div class="modal fade" id="model_step_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-success" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header">
+                          <h2 class="modal-title ">Confusion Matrixes</h2>
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body">
+                          <h5 class='mb-3'>Linear Regression Model</h5>
+                          <div class="table-responsive-sm">
+                              <table class="table table-sm">
+                                  <thead>
+                                    <tr>
+                                      <th>Prediction/Actual</th>
+                                      <th>Non-default</th>
+                                      <th>Default</th>
+                                      <th>Total</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th>Non-default</th>
+                                      <td>3365</td>
+                                      <td>140</td>
+                                      <td>3505</td>
+                                    </tr>
+                                    <tr>
+                                      <th>default</th>
+                                      <td>671</td>
+                                      <td>324</td>
+                                      <td>995</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Total</th>
+                                      <td>4036</td>
+                                      <td>464</td>
+                                      <td>4500</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                            <h5 class='mb-3'>Decision Tree Model</h5>
+                            <div class='table-responsive-sm'>
+                                <table class="table table-sm">
+                                    <thead>
+                                      <tr>
+                                        <th>Prediction/Actual</th>
+                                        <th>Non-default</th>
+                                        <th>Default</th>
+                                        <th>Total</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>non-default</th>
+                                        <td>3185</td>
+                                        <td>320</td>
+                                        <td>3505</td>
+                                      </tr>
+                                      <tr>
+                                        <th>Default</th>
+                                        <td>634</td>
+                                        <td>361</td>
+                                        <td>995</td>
+                                      </tr>
+                                      <tr>
+                                        <th>Total</th>
+                                        <td>3819</td>
+                                        <td>681</td>
+                                        <td>4500</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                      </div>
+                      <!-- end of the responsive table -->
+                  </div>
+                  <!--/.Content-->
+              </div>
+          </div>
+          <!-- end of model_step_2-->
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#portfolio" data-toggle="modal" data-target="#model_step_3">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Step 3: Performance Tracking</h1>
+                  <p class="mb-0">Based on the confusion matrixes, we evaluate the accuracy of models' prediction</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+
+          <!-- models_step_3s -->
+          <div class="modal fade" id="model_step_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-success" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header">
+                          <h4 class="modal-title ">Peformance Tracking</h4>
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body">
+                          <h3>the accuracy, recall, precision comparsions among models</h3>
+                          <img class ='img-fluid' src='img/regression_models.png'>
+                          <br/>
+                          <div class='table-responsive'>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>Logistic Regression Model</th>
+                                    <th>ClassTree Model</th>
+                                    <th>RandomForest Model</th>
+                                    <th>NaiveBayes Model</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th>Accuracy</th>
+                                    <td>0.819778</td>
+                                    <td>0.788</td>
+                                    <td>0.813111</td>
+                                    <td>0.770667</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Precision</th>
+                                    <td>0.698276</td>
+                                    <td>0.530103</td>
+                                    <td>0.644737</td>
+                                    <td>0.483899</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Recall</th>
+                                    <td>0.325628</td>
+                                    <td>0.362814</td>
+                                    <td>0.344724</td>
+                                    <td>0.558794</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <h4>Other Metrics</h4>
+                            <p>We can see from the graph that at the recall value shown by the stright line, LogisticReg Model is higher value than NavieBayes model.
+                                So Logistic is the better model to predict the default as compare to NaiveBayes</p>
+                            <img class='img-fluid' src='img/precision-recall-curve.png'>
+                            <br/>
+                            <img class='img-fluid' src='img/logistic_regression_classifire_precision_Recall_curve.png'>
+                            <p>From the above graph, we can see that we can adjust the Recall to be better that Percision by changing the classification threshold.
+                                ### Classifier with threshold of 0.2</p>
+
+                      </div>
+                      
+                  </div>
+                  <!--end of Modal Content-->
+              </div>
+          </div>
+          <!-- end of model_step_3-->
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#portfolio" data-toggle="modal" data-target="#model_step_4">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>A Quick Peek at the Coding</h1>
+                  <p class="mb-0">the following coding block in python creates a logistic regression model based on the dataset</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+          <!-- models_step_3s -->
+          <div class="modal  fade" id="model_step_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-success" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header">
+                          <h2 class="modal-title ">Sample Code</h2>
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body">
+                          <h3>Logistic Regression Model Instanization and Training</h3>
+                          <pre><code class="hljs" data-trim contenteditable>
+# Import the sklearn ML library - Logistic Regression
+from sklearn.linear_model import LogisticRegression
+# Instance of the estimator
+logistic_regression = LogisticRegression(n_jobs=-1, random_state =15)
+# train the estimator
+logistic_regression.fit(X_train, y_train)
+
+# Evaluate the model
+y_pred_test = logistic_regression.predict(X_test)
+# we conduct our evaluation using these 3 _score
+eval_metrix.loc['accuracy', 'LogisticReg Model']= accuracy_score(y_pred=y_pred_test, y_true=y_test)
+eval_metrix.loc['precision', 'LogisticReg Model']= precision_score(y_pred=y_pred_test, y_true=y_test)
+eval_metrix.loc['recall', 'LogisticReg Model']= recall_score(y_pred=y_pred_test, y_true=y_test)    
+
+# Confusion matrix for the logistic regression
+CM = confusion_matrix(y_pred=y_pred_test, y_true=y_test)
+CMatrix(CM)
+
+                                    </code></pre>
+                                </div>
+                                <!-- end of the responsive table -->
+                            </div>
+                            <!--/.Content-->
+                        </div>
+                    </div>
+                    <!-- end of model_step_3-->
+        </div>
+      </div>
+    </section>
 </head>
 <body>
 	<div class="predict">
